@@ -3,7 +3,6 @@ class RestaurantsController < ApplicationController
     @restaurants = Restaurant.all
   end
 
-
   def create
     @restaurant = Restaurant.new(restaurant_params)
     if @restaurant.save
